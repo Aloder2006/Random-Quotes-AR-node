@@ -65,7 +65,7 @@ quoteBtn.addEventListener("click", quoteG);
 
 
 
-fetch('https://52059bd7-b852-4b29-afd6-2de2b7bbc1e2-00-1nyc69knrt6ge.worf.replit.dev/api') // Dynamic request with URL parameter
+fetch('https://quotes-ar-tdly.onrender.com/api') // Dynamic request with URL parameter
 .then(res => res.json())
 .then(data => {
   vc.textContent = data.pageviews; 
