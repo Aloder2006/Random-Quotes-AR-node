@@ -20,9 +20,7 @@ app.get('/api', function(req, res) {
     const obj = JSON.parse(json);
 
     obj.pageviews = obj.pageviews+1;
-    if (req.query.type === 'visit-pageview') {
-        obj.visits = obj.visits+1;
-    }
+    
     // Updates pageviews and visits (conditional upon URL param value)
 
     const newJSON = JSON.stringify(obj);
@@ -41,6 +39,6 @@ app.use(function(req, res) {
   res.status(400);
   return res.send(`404 Error: Resource not found`);
 });
-app.listen(3002, () => {
-    console.log("Server running on port 3002");
+app.listen(3000, () => {
+    console.log("Server running on port 3000");
 })
