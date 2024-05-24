@@ -134,7 +134,9 @@ background-color: rgba(130, 130, 130, .7);
   color: var(--themeColor);
 }
 
-
+.insta p span{
+  font-weight: 600;
+}
 
 
 
