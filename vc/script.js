@@ -90,7 +90,7 @@ quoteBtn.addEventListener("click", quoteG);
 
 
 
-fetch('https://quotes-ar-tdly.onrender.com/api') // Dynamic request with URL parameter
+fetch('https://quotes-ar.vercel.app//api') // Dynamic request with URL parameter
 .then(res => res.json())
 .then(data => {
   vc.textContent = data.pageviews; 
